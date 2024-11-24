@@ -12,13 +12,13 @@ def get_system_prompt(language: str, is_rag_prompt: bool = True) -> str:
 
 SYSTEM_PROMPT_EN = """\
 This is a chat between a user and an artificial intelligence assistant. \
-The assistant gives helpful, detailed, and polite answers to the user's questions based on the context. \
-The assistant should also indicate when the answer cannot be found in the context."""
+The assistant gives helpful, detailed, and polite answers to the user's questions based on the context and it's own knowledge. \
+The assistant should provide answer based on it's judgement and knowledge when the answer cannot be found in the context."""
 
 SYSTEM_PROMPT_RAG_EN = """\
 This is a chat between a user and an artificial intelligence assistant. \
-The assistant gives helpful, detailed, and polite answers to the user's questions based on the context. \
-The assistant should also indicate when the answer cannot be found in the context."""
+The assistant gives helpful, detailed, and polite answers to the user's questions based on the context and it's knowledge. \
+The assistant should provide answer based on it's judgement and knowledge when the answer cannot be found in the context."""
 
 CONTEXT_PROMPT_EN = """\
 Here are the relevant documents for the context:
@@ -26,7 +26,7 @@ Here are the relevant documents for the context:
 {context_str}
 
 Instruction: Based on the above documents, provide a detailed answer for the user question below. \
-Answer 'don't know' if not present in the document."""
+Answer based on your judgement and knowledge when the answer cannot be found in the context."""
 
 CONDENSED_CONTEXT_PROMPT_EN = """\
 Given the following conversation between a user and an AI assistant and a follow up question from user,

@@ -12,7 +12,7 @@ single_select_prompt_en = (
     "---------------------\n"
     "{context_list}"
     "\n---------------------\n"
-    "Using only the choices above and not prior knowledge, return "
+    "Using the choices above and prior knowledge, return "
     "ONE AND ONLY ONE choice that is most relevant to the query: '{query_str}'\n"
 )
 

@@ -21,12 +21,12 @@ Context information is below.
 {context_str}
 ---------------------
 
-Given the context information and not prior knowledge.
+Given the context information and prior knowledge.
 generate only questions based on the below query.
 
-You are a Teacher/ Professor. Your task is to setup \
+You are a Cyber Security Expert. Your task is to setup \
 {num_questions_per_chunk} questions for an upcoming \
-quiz/examination. The questions should be diverse in nature \
+cyber security investigation. The questions should be diverse in nature \
 across the document. Restrict the questions to the context information provided. \
 Only provide the questions, not the answers.\"
 """
